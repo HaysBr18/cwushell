@@ -1,0 +1,41 @@
+The cwushell has the following built-in commands:
+
+
+manual
+
+	prints this file as a reference for all the available commands.
+
+exit [code]
+
+	Exits the cwushell with an optional exit code.
+
+prompt [new_prompt]
+
+	will change the current shell prompt to the new_prompt. Typing prompt will restore the default shell prompt.
+
+meminfo -switch
+
+	Will print on the screen different memory related information based on the switch.
+
+	-h, --help 	prints the available switches for this command.
+	
+	-t 	Prints the total RAM memory available in the system in bytes.
+
+	-u 	Prints the used RAM memory in bytes.
+
+	-n	Prints the size of the L2 cache and core in bytes.
+
+cpuinfo -switch
+
+	Will print on the screen different cpu related information based on the switch.
+
+	-h, --help	prints the available switches for this command.
+
+	-c 	Prints the CPU's clock speed.
+
+	-t 	Prints the CPU manufacturer.
+
+	-n 	Prints the number of cores.
+
+
+cwushell can also run normal Linux shell commands, which are externally executed using 'sh -c'.
